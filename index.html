@@ -327,7 +327,8 @@
     
     /* Conteúdo da página */
     .hero{
-      background: linear-gradient(180deg, rgba(38,147,171,0.06), rgba(224,242,247,0.4));
+      /* Fundo azul bebê removido e substituído por branco */
+      background: #fff; 
       padding: 56px 20px;
       text-align:center;
       color:var(--dark-blue);
@@ -339,10 +340,17 @@
     .btn{display:inline-block;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}
     .btn-primary{background:var(--accent-color);color:#fff}
     .btn-outline{background:#fff;color:var(--medium-blue);border:2px solid rgba(255,255,255,0.06)}
-    .hero .kicker{font-weight:700;color:var(--medium-blue);letter-spacing:0.02em}
+    /* Alterar a cor do texto KYC | KYB para preto negrito */
+    .hero .kicker{font-weight:700;color:var(--text-color);letter-spacing:0.02em}
 
     /* Sections / cards */
-    .section{padding:48px 20px;margin-top:18px;background:#fff;border-radius:10px;box-shadow:var(--card-shadow)}
+    .section{
+        padding:48px 20px;
+        margin-top:18px;
+        background:#fff; /* Garante que o fundo das seções seja branco */
+        border-radius:10px;
+        box-shadow:var(--card-shadow)
+    }
     .section h2{color:var(--dark-blue);text-align:center;margin:0 0 14px;font-size:1.8rem}
     .lead{max-width:820px;margin:0 auto;color:var(--muted);text-align:center;line-height:1.6}
     .grid {
@@ -356,7 +364,8 @@
         background:#fff;border-radius:10px;padding:22px;box-shadow:0 6px 18px rgba(15,35,60,0.04);
         border:1px solid #f0f6f9;display:flex;flex-direction:column;gap:12px;min-height:140px;
     }
-    .card h3{margin:0;font-size:1.1rem;color:var(--medium-blue)}
+    /* Alterar a cor do titulo dos cards para preto negrito */
+    .card h3{margin:0;font-size:1.1rem;color:var(--text-color); font-weight: 700;}
     .card p{margin:0;color:var(--muted);flex:1}
     .card .card-cta{margin-top:10px}
     .feature-row {
@@ -383,7 +392,8 @@
     /* Diferenciais / bullets */
     .bullets{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:18px}
     .bullet{background:linear-gradient(180deg,#fff,#fbfeff);border-radius:8px;padding:14px;border:1px solid #eef8fb;display:flex;gap:12px;align-items:center}
-    .bullet strong{display:block;color:var(--dark-blue)}
+    /* Alterar a cor do titulo dos cards (bullets) para preto negrito */
+    .bullet strong{display:block;color:var(--text-color); font-weight: 700;}
     .bullet p{margin:0;color:var(--muted);font-size:.95rem}
 
     /* Testemunho / nota */
@@ -480,23 +490,21 @@
             <img src="https://raw.githubusercontent.com/sacapinformacao/clientes/36d5eab5b6cf22741d66c95eae5857a60141dee2/logo%20novo%20branco%20copiar.png" alt="AP Informação Logo">
         </a>
     </div>
-    <!-- NOVO: Adicionado input e label para o menu mobile -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <!-- FIM NOVO -->
     <nav class="header-nav">
         <ul>
             <li>
                 <span>Serviços</span>
                 <ul class="dropdown-menu">
-                    <li><a href="https://sacapinformacao.github.io/BackGroundCheck/">Background Check</a></li>
-                    <li><a href="https://sacapinformacao.github.io/Veiculos/">Análise de Veículos</a></li>
-                    <li><a href="https://sacapinformacao.github.io/Enriquecimento/">Enriquecimento de Dados</a></li>
-                    <li><a href="https://sacapinformacao.github.io/Compliance/">Compliance e LGPD</a></li>
                     <li><a href="https://sacapinformacao.github.io/Cadastral/">Validação Cadastral</a></li>
+                    <li><a href="https://sacapinformacao.github.io/Enriquecimento/">Enriquecimento de Dados</a></li>
                     <li><a href="https://sacapinformacao.github.io/Credito/">Análise de Crédito</a></li>
+                    <li><a href="https://sacapinformacao.github.io/BackGroundCheck/">Background Check</a></li>
                     <li><a href="https://sacapinformacao.github.io/checagem-pre-processual/">Checagem Pré-processual</a></li>
                     <li><a href="https://sacapinformacao.github.io/devedores-e-reus/">Localização de Devedores e Réus</a></li>
+                    <li><a href="https://sacapinformacao.github.io/Veiculos/">Análise de Veículos</a></li>
+                    <li><a href="https://sacapinformacao.github.io/Compliance/">Compliance e LGPD</a></li>
                 </ul>
             </li>
             <li>
@@ -533,9 +541,9 @@
       <div class="kicker">KYC | KYB</div>
       <h1>Background Check — verificação completa de pessoas e empresas</h1>
       <p class="lead">O Background Check da APinformação reúne consultas completas para validar pessoas físicas e jurídicas. A solução é ideal para escritórios jurídicos que precisam avaliar clientes e partes em processos, para o setor imobiliário em negociações de compra, venda e locação, e para a indústria em análises de fornecedores, colaboradores e parceiros estratégicos.</p>
-<p style="margin-top:10px;font-weight:700;color:var(--medium-blue);">
-  Atendemos: Escritórios Jurídicos • Setor Imobiliário (incorporadoras, construtoras, imobiliárias e holdings) • Indústrias
-</p>
+      <p style="margin-top:10px;font-weight:700;color:var(--dark-blue);">
+        Atendemos: Escritórios Jurídicos • Setor Imobiliário (incorporadoras, construtoras, imobiliárias e holdings) • Indústrias
+      </p>
 
       <div class="hero-ctas">
         <a class="btn btn-primary" 
@@ -551,7 +559,8 @@
     <h2>Por que realizar um Background Check?</h2>
     <p class="lead">
   A verificação de antecedentes é essencial para reduzir riscos em contratações, parcerias e negociações. 
-  Seja em <strong>escritórios jurídicos</strong> para avaliar clientes e partes, no <strong>setor imobiliário</strong> em transações de compra, venda ou locação,
+  Seja em <strong>escritórios jurídicos</strong> para avaliar clientes e partes, no <strong>se
+tor imobiliário</strong> em transações de compra, venda ou locação,
 ou na <strong>indústria</strong> para análise de fornecedores e colaboradores, o Background Check oferece uma visão completa e fundamentada de pessoas físicas e jurídicas.
 </p>
   </section>
@@ -738,14 +747,14 @@ ou na <strong>indústria</strong> para análise de fornecedores e colaboradores,
         <div class="footer-column">
             <h3>Serviços</h3>
             <ul>
-                <li><a href="https://sacapinformacao.github.io/BackGroundCheck/">Background Check</a></li>
-                <li><a href="https://sacapinformacao.github.io/Veiculos/">Análise de Veículos</a></li>
-                <li><a href="https://sacapinformacao.github.io/Enriquecimento/">Enriquecimento de Dados</a></li>
-                <li><a href="https://sacapinformacao.github.io/Compliance/">Compliance e LGPD</a></li>
                 <li><a href="https://sacapinformacao.github.io/Cadastral/">Validação Cadastral</a></li>
+                <li><a href="https://sacapinformacao.github.io/Enriquecimento/">Enriquecimento de Dados</a></li>
                 <li><a href="https://sacapinformacao.github.io/Credito/">Análise de Crédito</a></li>
+                <li><a href="https://sacapinformacao.github.io/BackGroundCheck/">Background Check</a></li>
                 <li><a href="https://sacapinformacao.github.io/checagem-pre-processual/">Checagem Pré-processual</a></li>
                 <li><a href="https://sacapinformacao.github.io/devedores-e-reus/">Localização de Devedores e Réus</a></li>
+                <li><a href="https://sacapinformacao.github.io/Veiculos/">Análise de Veículos</a></li>
+                <li><a href="https://sacapinformacao.github.io/Compliance/">Compliance e LGPD</a></li>
             </ul>
         </div>
         <div class="footer-column">
